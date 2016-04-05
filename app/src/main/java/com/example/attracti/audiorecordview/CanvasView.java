@@ -10,9 +10,6 @@ import android.view.View;
 
 import java.util.Random;
 
-/**
- * Created by Iryna on 4/1/16.
- */
 
 public class CanvasView extends View {
     public Paint mPaint;
