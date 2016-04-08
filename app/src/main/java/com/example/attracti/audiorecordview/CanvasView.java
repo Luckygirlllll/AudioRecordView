@@ -16,14 +16,12 @@ public class CanvasView extends View {
     public static Canvas mCanvas;
     private int startX=50;
     private int startY=50;
-    private int stopX = 500;
-    private int stopY = 500;
 
     public CanvasView(Context context, AttributeSet attrs) {
         super(context, attrs);
         mPaint = new Paint();
     }
-    
+
     public CanvasView(Context context) {
         super(context);
         mPaint = new Paint();
