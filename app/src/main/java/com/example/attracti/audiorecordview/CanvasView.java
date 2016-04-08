@@ -23,8 +23,7 @@ public class CanvasView extends View {
         super(context, attrs);
         mPaint = new Paint();
     }
-
-    //constructor
+    
     public CanvasView(Context context) {
         super(context);
         mPaint = new Paint();
