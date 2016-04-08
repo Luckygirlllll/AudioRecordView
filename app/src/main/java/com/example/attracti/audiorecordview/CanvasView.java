@@ -33,13 +33,13 @@ public class CanvasView extends View {
     public void drawLine() {
         Random random = new Random();
         startX = random.nextInt(1000);
+
         Log.i("nextInt", String.valueOf(startX));
         Log.i("nextInt", String.valueOf(startY));
-        startX=startY;
+
         //important. Refreshes the view by calling onDraw function
         invalidate();
     }
-
 
 
     protected void onDraw(Canvas canvas) {
@@ -53,6 +53,6 @@ public class CanvasView extends View {
         canvas.drawLine(0, 300, 1000, 300, mPaint);
         canvas.drawLine(0, 400, 1000, 400, mPaint);
         mPaint.setColor(Color.BLUE);
-        canvas.drawLine(startX, 200, startY, 400, mPaint);
+        canvas.drawLine(startX, 200, startX, 400, mPaint);
     }
 }
